@@ -1,0 +1,36 @@
+@mainColor: #b94cf8;
+@textColor: #4400ff;
+@colors: #0275d8, #5cb85c, #5bc0de, #f0ad4e, #d9534f;
+.prueba(@bg:red) {
+    background-color: @bg;
+}
+.pintar-lista(@items; @i: 1) when (@i =< @items){
+    .item-@{i}{
+        background-color: extract(@colors,@i);
+        border-style: dotted;
+        border-width: 1px
+    }
+    .pintar-lista(@items, (@i + 1));
+}
+body{
+    background-color: rgb(64, 192, 154);
+    .container{
+        width: 70%;
+        margin: auto;
+        form{
+            background-color: @mainColor;
+            border-radius: 5px;
+            box-shadow: rgba(255, 0, 30, 0.5) 0px 7px 29px 0px;
+            padding: 20px;
+            legend{
+                color:@textColor;
+                .prueba(#b639ff)
+            }
+            fieldset{
+                ul{
+                    .pintar-lista(5);
+                }
+            }
+        }
+    }
+} 

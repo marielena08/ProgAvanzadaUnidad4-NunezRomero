@@ -1,0 +1,42 @@
+body {
+  background-color: #40c09a;
+}
+body .container {
+  width: 70%;
+  margin: auto;
+}
+body .container form {
+  background-color: #b94cf8;
+  border-radius: 5px;
+  box-shadow: rgba(255, 0, 30, 0.5) 0px 7px 29px 0px;
+  padding: 20px;
+}
+body .container form legend {
+  color: #4400ff;
+  background-color: #b639ff;
+}
+body .container form fieldset ul .item-1 {
+  background-color: #0275d8;
+  border-style: dotted;
+  border-width: 1px;
+}
+body .container form fieldset ul .item-2 {
+  background-color: #5cb85c;
+  border-style: dotted;
+  border-width: 1px;
+}
+body .container form fieldset ul .item-3 {
+  background-color: #5bc0de;
+  border-style: dotted;
+  border-width: 1px;
+}
+body .container form fieldset ul .item-4 {
+  background-color: #f0ad4e;
+  border-style: dotted;
+  border-width: 1px;
+}
+body .container form fieldset ul .item-5 {
+  background-color: #d9534f;
+  border-style: dotted;
+  border-width: 1px;
+}
